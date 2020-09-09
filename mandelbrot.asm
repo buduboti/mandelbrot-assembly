@@ -2,13 +2,14 @@
 %include 'gfx.inc'
 %include 'mio.inc'
 
-%define WIDTH  1364 ;1364 ; 1366 nem megy...
-%define HEIGHT 768  ;768
+%define WIDTH  1440 ;1364 ; 1366 nem megy...
+%define HEIGHT 900  ;768
 
-global main
+global _start
 
 section .text
-main:
+_start:
+	.begining:
 	mov 	eax, hellomsg
 	call 	mio_writestr
 	xor 	eax, eax
@@ -17,7 +18,7 @@ main:
 	je 		.single
 	cmp 	eax, 'd'
 	je 		.double
-	jmp 	main
+	jmp 	.begining
 
 	.double:
 	mov		eax, WIDTH		
