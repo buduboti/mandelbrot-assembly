@@ -5,7 +5,9 @@ One of my projects in university
 # Control
 
 wasd - move
+
 n, m - zooming
+
  Esc - exiting
  
 # Building
