@@ -1,17 +1,17 @@
-### mandelbrot-assembly
+# mandelbrot-assembly
 
 One of my projects in university
 
-### Control
+# Control
 
 wasd - move
 n, m - zooming
  Esc - exiting
  
-### Building
+# Building
 
 Currently is working on Windows (XP), I'm working on other OS compatibilities.
 
-# Windows
+### Windows
 
 build.bat
